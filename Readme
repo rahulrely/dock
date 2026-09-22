@@ -1,0 +1,64 @@
+ # Docker Lifecycle Learning App
+
+ This is a small learning and testing application for understanding the Docker container lifecycle.
+
+ ## Learning goals
+
+ - Build an image from a Dockerfile
+ - Create and run containers
+ - Inspect container status and logs
+ - Start, stop, restart, and remove containers
+ - Understand the difference between images, containers, and volumes
+
+ ## Prerequisites
+
+ - [Docker](https://docs.docker.com/get-docker/) installed and running
+ - A terminal or command prompt
+
+ ## Getting started
+
+ Clone or open this project, then build the image:
+
+ ```bash
+ docker build -t docker-lifecycle-app .
+ ```
+
+ Run a container:
+
+ ```bash
+ docker run --name docker-lifecycle-container docker-lifecycle-app
+ ```
+
+ ## Useful lifecycle commands
+
+ ```bash
+ # List running containers
+ docker ps
+
+ # List all containers
+ docker ps -a
+
+ # View container output
+ docker logs docker-lifecycle-container
+
+ # Stop and start a container
+ docker stop docker-lifecycle-container
+ docker start docker-lifecycle-container
+
+ # Restart a container
+ docker restart docker-lifecycle-container
+
+ # Remove a stopped container
+ docker rm docker-lifecycle-container
+
+ # Remove the image
+ docker rmi docker-lifecycle-app
+ ```
+
+ ## Lifecycle overview
+
+ ```text
+ Dockerfile -> Image -> Created container -> Running -> Stopped -> Removed
+ ```
+
+ Use the commands above to observe each state and experiment safely.
