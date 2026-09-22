@@ -1,0 +1,18 @@
+{
+  "name": "dock",
+  "version": "1.0.0",
+  "description": "test app for docker only",
+  "keywords": [
+    "rahul"
+  ],
+  "license": "MIT",
+  "author": "rahul singh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js"
+},
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
